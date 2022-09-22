@@ -41,13 +41,60 @@ variable "res_spec" {
           }
         ]
         security_group = [
-         {
-           name = "sg-dmz-cn-shanghai-001"
-           type = "normal"
-           inner_access_policy = "Accept"
-           tags = {}
-           description = "descriptions"
-         }
+          {
+            name = "sg-dmz-cn-shanghai-001"
+            type = "normal"
+            inner_access_policy = "Accept"
+            tags = {}
+            description = "descriptions"
+            rule = [
+              {
+                type = "ingress"
+                ip_protocol = "tcp"
+                port_range = "80/80"
+                nic_type = "intranet"
+                policy = "accept"
+                priority = 10
+                cidr_ip = "0.0.0.0/0"
+              },
+              {
+                type = "ingress"
+                ip_protocol = "tcp"
+                port_range = "443/443"
+                nic_type = "intranet"
+                policy = "accept"
+                priority = 15
+                cidr_ip = "0.0.0.0/0"
+              }
+            ]
+          },
+          {
+            name = "sg-dmz-cn-shanghai-002"
+            type = "normal"
+            inner_access_policy = "Accept"
+            tags = {}
+            description = "descriptions"
+            rule = [
+              {
+                type = "ingress"
+                ip_protocol = "tcp"
+                port_range = "80/80"
+                nic_type = "intranet"
+                policy = "accept"
+                priority = 10
+                cidr_ip = "0.0.0.0/0"
+              },
+              {
+                type = "ingress"
+                ip_protocol = "tcp"
+                port_range = "443/443"
+                nic_type = "intranet"
+                policy = "accept"
+                priority = 15
+                cidr_ip = "0.0.0.0/0"
+              }
+            ]
+          }
         ]
       },
       {
@@ -71,6 +118,62 @@ variable "res_spec" {
             zone_id = "cn-shanghai-c"
             tags = {}
             description = "descriptions"
+          }
+        ]
+        security_group = [
+          {
+            name = "sg-dmz-cn-shanghai-003"
+            type = "normal"
+            inner_access_policy = "Accept"
+            tags = {}
+            description = "descriptions"
+            rule = [
+              {
+                type = "ingress"
+                ip_protocol = "tcp"
+                port_range = "80/80"
+                nic_type = "intranet"
+                policy = "accept"
+                priority = 10
+                cidr_ip = "0.0.0.0/0"
+              },
+              {
+                type = "ingress"
+                ip_protocol = "tcp"
+                port_range = "443/443"
+                nic_type = "intranet"
+                policy = "accept"
+                priority = 15
+                cidr_ip = "0.0.0.0/0"
+              }
+            ]
+          },
+          {
+            name = "sg-dmz-cn-shanghai-004"
+            type = "normal"
+            inner_access_policy = "Accept"
+            tags = {}
+            description = "descriptions"
+            rule = [
+              {
+                type = "ingress"
+                ip_protocol = "tcp"
+                port_range = "80/80"
+                nic_type = "intranet"
+                policy = "accept"
+                priority = 10
+                cidr_ip = "0.0.0.0/0"
+              },
+              {
+                type = "ingress"
+                ip_protocol = "tcp"
+                port_range = "443/443"
+                nic_type = "intranet"
+                policy = "accept"
+                priority = 15
+                cidr_ip = "0.0.0.0/0"
+              }
+            ]
           }
         ]
       }
