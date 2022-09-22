@@ -98,7 +98,7 @@ variable "res_spec" {
         ]
       },
       {
-        name = "vpc-dmz-cn-shanghai-002"
+        name = "vpc-app-cn-shanghai-001"
         location = "cn-shanghai"
         tags = {}
         cidr = "10.20.0.0/16"
@@ -106,14 +106,14 @@ variable "res_spec" {
         description = "descriptions"
         vswitch = [
           {
-            name = "vswitch-dmz-cn-shanghai-003"
+            name = "vswitch-app-cn-shanghai-001"
             cidr = "10.20.0.0/24"
             zone_id = "cn-shanghai-c"
             tags = {}
             description = "descriptions"
           },
           {
-            name = "vswitch-dmz-cn-shanghai-004"
+            name = "vswitch-app-cn-shanghai-002"
             cidr = "10.20.1.0/24"
             zone_id = "cn-shanghai-c"
             tags = {}
@@ -122,7 +122,7 @@ variable "res_spec" {
         ]
         security_group = [
           {
-            name = "sg-dmz-cn-shanghai-003"
+            name = "sg-app-cn-shanghai-001"
             type = "normal"
             inner_access_policy = "Accept"
             tags = {}
@@ -149,7 +149,7 @@ variable "res_spec" {
             ]
           },
           {
-            name = "sg-dmz-cn-shanghai-004"
+            name = "sg-app-cn-shanghai-002"
             type = "normal"
             inner_access_policy = "Accept"
             tags = {}
@@ -158,7 +158,7 @@ variable "res_spec" {
               {
                 type = "ingress"
                 ip_protocol = "tcp"
-                port_range = "80/80"
+                port_range = "6379/6379"
                 nic_type = "intranet"
                 policy = "accept"
                 priority = 10

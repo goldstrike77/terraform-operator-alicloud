@@ -7,13 +7,14 @@ export ALICLOUD_SECRET_KEY="raY5suVDVz91ga7nNxxxxxxxxxxxxx"
 #### Requirements
 | Name | Version |
 |------|---------|
-| [terraform](https://github.com/hashicorp/terraform) | >= 1.186.0 |
+| [terraform](https://github.com/hashicorp/terraform) | >= 1.2.9 |
 | [terragrunt](https://github.com/gruntwork-io/terragrunt) | >= 0.38.12 |
 
 #### Providers
 | Name | Version |
 |------|---------|
 | aliyun/alicloud | >= 1.186.0 |
+| hashicorp/random | >= 3.4.3 |
 
 #### Running
 ```hcl

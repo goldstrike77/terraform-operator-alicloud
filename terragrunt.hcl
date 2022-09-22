@@ -6,8 +6,12 @@ generate "provider" {
 terraform {
   required_providers {
     aliyun = {
-      source  = "aliyun/alicloud"
+      source = "aliyun/alicloud"
       version = "~> 1.186.0"
+    }
+    random = {
+      source = "hashicorp/random"
+      version = "~> 3.4.3"
     }
   }
 }
