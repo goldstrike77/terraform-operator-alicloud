@@ -27,7 +27,6 @@ terragrunt run-all apply --terragrunt-parallelism 1
 This ensures your change is easy to understand, and the chance to be rejected will be small
 
 #### Rules to make changes
-**before the release process is automated**
 1. Make sure you are working on the **correct environment**.
-2. Do `plan` before everything, read the planned change output carefully .
-3. **Do not fuck up step 1 and 2**
+2. Do `plan` before everything, read the planned change output carefully.
+3. **Do not fuck up step 1 and 2.**
