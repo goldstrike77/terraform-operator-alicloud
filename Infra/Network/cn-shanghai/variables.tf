@@ -28,14 +28,14 @@ variable "res_spec" {
           {
             name = "vswitch-dmz-cn-shanghai-001"
             cidr = "10.10.0.0/24"
-            zone_id = "cn-shanghai-c"
+            zone_id = "cn-shanghai-f"
             tags = {}
             description = "descriptions"
           },
           {
             name = "vswitch-dmz-cn-shanghai-002"
             cidr = "10.10.1.0/24"
-            zone_id = "cn-shanghai-c"
+            zone_id = "cn-shanghai-f"
             tags = {}
             description = "descriptions"
           }
@@ -108,14 +108,14 @@ variable "res_spec" {
           {
             name = "vswitch-app-cn-shanghai-001"
             cidr = "10.20.0.0/24"
-            zone_id = "cn-shanghai-c"
+            zone_id = "cn-shanghai-f"
             tags = {}
             description = "descriptions"
           },
           {
             name = "vswitch-app-cn-shanghai-002"
             cidr = "10.20.1.0/24"
-            zone_id = "cn-shanghai-c"
+            zone_id = "cn-shanghai-f"
             tags = {}
             description = "descriptions"
           }
